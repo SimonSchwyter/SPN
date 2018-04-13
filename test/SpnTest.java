@@ -15,17 +15,39 @@ public class SpnTest {
         key = "0001" + "0001" + "0010" + "1000" + "1000" + "1100" + "0000" +  "0000";
     }
 
+    /*
     @Test
     public void encrypt() {
         String text = "0001001010001111";
-        Spn spn = new Spn(key, 4, sBox);
+        Spn spn = new Spn(key, 4, sBox, 4);
         assertEquals(spn.encrypt(text), "1010111010110100");
-    }
+    }*/
 
     @Test
     public void decrypt() {
         String cypherText = "1010111010110100";
-        Spn spn = new Spn(key, 4, sBox);
+        Spn spn = new Spn(key, 4, sBox, 4);
         assertEquals(spn.decrypt(cypherText), "0001001010001111");
+    }
+
+    @Test
+    public void xor() {
+        Spn spn = new Spn(key, 4, sBox, 4);
+        String result = spn.xor("111101010110", "000110101111");
+        assertEquals(result, "111011111001");
+    }
+
+    @Test
+    public void encrypt() {
+    }
+
+    @Test
+    public void intToBinary() {
+        Spn spn = new Spn(key, 4, sBox, 4);
+        assertEquals(spn.intToBinary(2), "0010");
+    }
+
+    @Test
+    public void e() {
     }
 }
