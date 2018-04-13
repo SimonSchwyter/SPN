@@ -1,25 +1,27 @@
 public class Spn {
-    private String text ="";
     private final int[][] bitpermut = new int[][]{
         {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15},{0,4,8,12,1,5,9,13,2,6,10,14,3,7,11,15}
     };
     private String[][] sBox;
     private String[] keys;
-    public Spn(String text, String baseKey, int keyCount,String[][] sBox) {
-        this.text = text;
+    public Spn(String baseKey, int keyCount,String[][] sBox) {
         this.keys = calcKeys(baseKey, keyCount);
         this.sBox = sBox;
     }
 
-    public String encript(){
+    public String encrypt(String text){
         //this.keys = invertKeys();
         String encriptedText="";
-        this.text = runSBox();
-        System.out.println(this.text);
+        text = runSBox(text);
+        System.out.println(text);
         for(int i =0; i < this.keys.length; i++){
 
         }
         return encriptedText;
+    }
+
+    public String decrypt(String cypherText) {
+        return "";
     }
 
     private String[] invertKeys() {
@@ -56,14 +58,9 @@ public class Spn {
         return keys;
     }
 
-    public String getText() {
-        return text;
-    }
-
-
-    private String runSBox(){
+    private String runSBox(String text){
         String newText="";
-        String[] textBlocks = this.text.split("(?<=\\G....)");
+        String[] textBlocks = text.split("(?<=\\G....)");
         for(int i=0; i < textBlocks.length;i++){
             for(int j=0; j < textBlocks.length;j++){
                 if(textBlocks[i].equals(this.sBox[0][j])){
