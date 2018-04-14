@@ -37,8 +37,23 @@ public class SpnTest {
         assertEquals(result, "111011111001");
     }
 
+
+    /**
+     * The following keys should be correct
+     * k0 = 0001000100101000
+     * k1 = 0001001010001000
+     * k2 = 0010100010001100
+     * k3 = 1000100011000000
+     * k4 = 1000110000000000
+     */
     @Test
-    public void encrypt() {
+    public void calcKeys() {
+        Spn spn = new Spn(key, 4, sBox, 4);
+        String[] keys = spn.calcKeys(key, 4);
+        assertEquals(keys[0], "0001000100101000");
+        assertEquals(keys[1], "0001001010001000");
+        assertEquals(keys[2], "0010100010001100");
+        assertEquals(keys[3], "1000100011000000");
     }
 
     @Test

@@ -7,8 +7,9 @@ class Spn {
     private String[][] sBox;
     private String[] keys;
     private int m;
+
     Spn(String baseKey, int keyCount,String[][] sBox, int m) {
-        this.keys = calcKeys(baseKey, keyCount);
+        // this.keys = calcKeys(baseKey, keyCount);
         this.sBox = sBox;
         this.m = m;
     }
@@ -41,7 +42,7 @@ class Spn {
 
         for (int i = 0; i < cypherText.length() / m; i++) {
             String yi = cypherText.substring(i*m, i*m + m);
-            String xiOne = E(Integer.toBinaryString(Integer.parseInt(yMinusOne + intToBinary(i), 2) % 2222));
+            String xiOne =  (Integer.toBinaryString(Integer.parseInt(yMinusOne + intToBinary(i), 2) % 2222));
             String xi = xor(xiOne, yi);
             xArray[i] = xi;
         }
@@ -79,6 +80,8 @@ class Spn {
     }
 
     String E(String text){
+        // 1: Foreach key: xor value with ki, apply sbox and bitshift
+
         return text;
     }
 
@@ -111,23 +114,12 @@ class Spn {
      * @params String basekey
      * @return String Array of keys k0, k1, ..., kn-1
      */
-    private String[] calcKeys(String keybase, int keyCount){
-        String[] keys = new String[keyCount+1];
-        int block =0;
-        for(int i =0; i< keyCount+1; i++){
-            String key = "";
-            int item =0;
-            for(int j=0; j<16; j++){
-                if(4*block+j == keybase.toCharArray().length){
-                block=0;
-                item =0;
-                }
-                 key += keybase.toCharArray()[4*block+item];
-                 item ++;
-            }
-            keys[i]=key;
-            block++;
+    String[] calcKeys(String keybase, int keyCount){
+        String[] keys = new String[keyCount + 1];
+        for (int i = 0; i < keyCount + 1; i++) {
+            keys[i] = keybase.substring(4*i, 4*i + 16);
         }
+
         return keys;
     }
 

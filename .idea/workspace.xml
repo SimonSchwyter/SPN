@@ -19,31 +19,25 @@
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="6" column="35" lean-forward="true" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+              <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Spn.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Spn.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Spn.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="48" column="37" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
-              <folding>
-                <element signature="e#1847#1848#0" expanded="true" />
-                <element signature="e#1943#1944#0" expanded="true" />
-                <element signature="e#1971#1972#0" expanded="true" />
-                <element signature="e#1998#1999#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="272">
+              <caret line="120" column="9" selection-start-line="120" selection-start-column="9" selection-end-line="120" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SpnTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SpnTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/SpnTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="45" column="43" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
+            <state relative-caret-position="357">
+              <caret line="51" column="45" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,8 +69,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/tests/SpnTest.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/test/SpnTest.java" />
         <option value="$PROJECT_DIR$/src/Spn.java" />
+        <option value="$PROJECT_DIR$/test/SpnTest.java" />
       </list>
     </option>
   </component>
@@ -99,7 +93,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -116,8 +109,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -157,7 +151,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SpnTest.intToBinary">
+  <component name="RunManager" selected="JUnit.SpnTest.calcKeys">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -168,6 +162,23 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="SpnTest.calcKeys" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SPN" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SpnTest" />
+      <option name="METHOD_NAME" value="calcKeys" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration name="SpnTest.decrypt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SPN" />
@@ -210,23 +221,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SpnTest" />
       <option name="METHOD_NAME" value="intToBinary" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="SpnTest.xor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SPN" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SpnTest" />
-      <option name="METHOD_NAME" value="xor" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -290,18 +284,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.SpnTest.xor" />
       <item itemvalue="JUnit.SpnTest.decrypt" />
       <item itemvalue="JUnit.SpnTest.encrypt" />
       <item itemvalue="JUnit.SpnTest.intToBinary" />
+      <item itemvalue="JUnit.SpnTest.calcKeys" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SpnTest.calcKeys" />
         <item itemvalue="JUnit.SpnTest.intToBinary" />
         <item itemvalue="JUnit.SpnTest.encrypt" />
         <item itemvalue="JUnit.SpnTest.decrypt" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.SpnTest.xor" />
       </list>
     </recent_temporary>
   </component>
@@ -320,35 +314,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SpnTest_decrypt - 2018.04.13 at 13h 32m 07s.xml">
-      <configuration name="SpnTest.decrypt" configurationId="JUnit" />
+    <history-entry file="SpnTest_calcKeys - 2018.04.14 at 21h 50m 17s.xml">
+      <configuration name="SpnTest.calcKeys" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpnTest_decrypt - 2018.04.13 at 13h 32m 28s.xml">
-      <configuration name="SpnTest.decrypt" configurationId="JUnit" />
+    <history-entry file="SpnTest_calcKeys - 2018.04.14 at 21h 50m 43s.xml">
+      <configuration name="SpnTest.calcKeys" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpnTest_decrypt - 2018.04.13 at 13h 33m 34s.xml">
-      <configuration name="SpnTest.decrypt" configurationId="JUnit" />
+    <history-entry file="SpnTest_calcKeys - 2018.04.14 at 21h 51m 11s.xml">
+      <configuration name="SpnTest.calcKeys" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpnTest_decrypt - 2018.04.13 at 13h 34m 05s.xml">
-      <configuration name="SpnTest.decrypt" configurationId="JUnit" />
+    <history-entry file="SpnTest_calcKeys - 2018.04.14 at 21h 52m 01s.xml">
+      <configuration name="SpnTest.calcKeys" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpnTest_decrypt - 2018.04.13 at 13h 36m 10s.xml">
-      <configuration name="SpnTest.decrypt" configurationId="JUnit" />
+    <history-entry file="SpnTest_calcKeys - 2018.04.14 at 21h 52m 09s.xml">
+      <configuration name="SpnTest.calcKeys" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpnTest_decrypt - 2018.04.13 at 13h 39m 24s.xml">
-      <configuration name="SpnTest.decrypt" configurationId="JUnit" />
+    <history-entry file="SpnTest_calcKeys - 2018.04.14 at 21h 52m 40s.xml">
+      <configuration name="SpnTest.calcKeys" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpnTest_encrypt - 2018.04.13 at 13h 56m 55s.xml">
-      <configuration name="SpnTest.encrypt" configurationId="JUnit" />
+    <history-entry file="SpnTest_calcKeys - 2018.04.14 at 21h 53m 12s.xml">
+      <configuration name="SpnTest.calcKeys" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpnTest_intToBinary - 2018.04.13 at 13h 57m 08s.xml">
-      <configuration name="SpnTest.intToBinary" configurationId="JUnit" />
+    <history-entry file="SpnTest_calcKeys - 2018.04.14 at 21h 53m 37s.xml">
+      <configuration name="SpnTest.calcKeys" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpnTest_intToBinary - 2018.04.13 at 13h 57m 44s.xml">
-      <configuration name="SpnTest.intToBinary" configurationId="JUnit" />
+    <history-entry file="SpnTest_calcKeys - 2018.04.14 at 21h 54m 17s.xml">
+      <configuration name="SpnTest.calcKeys" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpnTest_intToBinary - 2018.04.13 at 13h 58m 52s.xml">
-      <configuration name="SpnTest.intToBinary" configurationId="JUnit" />
+    <history-entry file="SpnTest_calcKeys - 2018.04.14 at 21h 54m 25s.xml">
+      <configuration name="SpnTest.calcKeys" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -397,34 +391,14 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="137" selection-start-line="3" selection-start-column="137" selection-end-line="3" selection-end-column="137" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Spn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="67" column="52" selection-start-line="67" selection-start-column="52" selection-end-line="67" selection-end-column="52" />
-          <folding>
-            <element signature="e#1847#1848#0" expanded="true" />
-            <element signature="e#1943#1944#0" expanded="true" />
-            <element signature="e#1971#1972#0" expanded="true" />
-            <element signature="e#1998#1999#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="35" lean-forward="true" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/SpnTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
+        <state relative-caret-position="714">
           <caret line="45" column="43" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -434,13 +408,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Spn.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="48" column="37" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
+        <state relative-caret-position="731">
+          <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="137" selection-start-line="3" selection-start-column="137" selection-end-line="3" selection-end-column="137" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Spn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1105">
+          <caret line="67" column="52" selection-start-line="67" selection-start-column="52" selection-end-line="67" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Spn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="120" column="9" selection-start-line="120" selection-start-column="9" selection-end-line="120" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/SpnTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="51" column="45" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
           <folding>
-            <element signature="e#1847#1848#0" expanded="true" />
-            <element signature="e#1943#1944#0" expanded="true" />
-            <element signature="e#1971#1972#0" expanded="true" />
-            <element signature="e#1998#1999#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
